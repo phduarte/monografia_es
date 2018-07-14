@@ -1,10 +1,10 @@
 ## Métodos adotados
 
-+ Tipo do trabalho
+Tipo do trabalho
 
-Estudo de caso
++ Estudo de caso
 
-+ Etapas de desenvolvimento (“como fazer”)
+Etapas de desenvolvimento (“como fazer”)
 
 1) Realizar uma busca manual no site github por software completos desenvolvidos com propósito de ERP, CRM ou E-Commerce para pequenos negócios, arquiteturas no estilo de camadas, por exemplo DDD, MVC, BOLOVO, etc.)
 2) Aferir cada software através de indicadores de Linhas de Código, Complexidade ciclomática, Acoplamento, Quantidade de indireções, Quantidade de números mágicos, Comentários.
@@ -16,15 +16,15 @@ Estudo de caso
 8) Registrar as evidências como estudo de caso de ganho de qualidade.
 
 
-+ Tipos de dados
+Tipos de dados
 
-Quantitativos
++ Quantitativos
 
-+ Como coletar os dados e analisa-los
+Como coletar os dados e analisa-los
 
-Utilizando como fonte os repositórios de softwares open source do site github. Software visual studio para medição de indicadores.
++ Utilizando como fonte os repositórios de softwares open source do site github. Software visual studio para medição de indicadores.
 
-+ Como representar os dados
+Como representar os dados
 
 1) Tabelas
 2) Exemplos de código fonte
