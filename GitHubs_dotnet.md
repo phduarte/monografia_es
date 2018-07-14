@@ -1,6 +1,6 @@
 Alguns sistemas em .NET que talvez podemos usar para comparação
 
-Parece ser bons exemplos:
+Dentro do perfil, podem ser usados para avaliação:
 
 + https://github.com/felipeaugustox/sistema-comercio
 + https://github.com/jrrnet/ControleDeEstoque
