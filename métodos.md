@@ -18,7 +18,7 @@ Etapas de desenvolvimento (“como fazer”)
 
 Tipos de dados
 
-+ Quantitativos
++ Qualitativos
 
 Como coletar os dados e analisa-los
 
