@@ -1,35 +1,30 @@
-Alguns sistemas em .NET que talvez podemos usar para comparação ( Os primeiros da lista parecem mais relevantes )
+Alguns sistemas em .NET que talvez podemos usar para comparação
 
-https://github.com/edivaniap/SGCM (NÃO COMPILA! O USUÁRIO PARECE TER EXCLUÍDO MANUALMENTE ALGUMAS TELAS DO SISTEMA)
+Parece ser bons exemplos:
 
-https://github.com/jmasiero/SisComanda (COMPILA, MAS É UM SISTEMA "OCO", SÓ CRIOU OS OBJETOS MAS TEM NADA FUNCIONAL)
++ https://github.com/felipeaugustox/sistema-comercio
++ https://github.com/jrrnet/ControleDeEstoque
++ https://github.com/gabrielfigueira/Sistema-Condominio
++ https://github.com/matheushps/ReservaFacil
++ https://github.com/CristianoRC/SoftwareOrdemDeServico
++ https://github.com/ranieresilva/controle-estoque
 
-https://github.com/caioernandes/sistema-relatorio (MESMA SITUAÇÃO DO ANTERIOR)
+Incompleto (Sistema oco):
 
-https://github.com/marlonvidal/autosoft (UM EXEMPLO DE SOFTWARE BEM ADERENTE A SOLID E BOAS PRÁTICAS. MAS, APARENTEMENTE TAMBÉM NÃO TEM NADA FUNCIONAL)
++ https://github.com/jmasiero/SisComanda
++ https://github.com/caioernandes/sistema-relatorio
++ https://github.com/marlonvidal/autosoft
++ https://github.com/fnalin/Demo-DDD-ERP
++ https://github.com/renatosoares/agendawpf
 
-https://github.com/felipeaugustox/sistema-comercio (BOM EXEMPLO PARA ANÁLISE DO TCC. O CÓDIGO NÃO É BOM, MAS A TAXA DE MANUTENIBILIDADE É BOA)
+Fora do perfil, não se enquadra nos projetos alvo do artigo:
 
-https://github.com/jrrnet/ControleDeEstoque (BOM EXEMPLO PARA ANÁLISE DO TCC. O CÓDIGO NÃO É BOM, MAS É BEM ORGANIZADO E A TAXA DE MANUTENIBILIDADE, PARECE QUE DÁ PRA MELHORAR)
++ https://github.com/danimaribeiro/NFSe.Net
++ https://github.com/SavioMacedo/Projeto-Sistema-de-Consultas-OnDemand
++ https://github.com/kdjones/fuzzystring
++ https://github.com/lucasdearaujo/Correios.Net
 
-https://github.com/fnalin/Demo-DDD-ERP (SISTEMA OCO. SÓ TEM A ESTRUTURA, NEM OBJETOS MUITO MENOS CÓDIGO!)
+Não funciona:
 
-https://github.com/gabrielfigueira/Sistema-Condominio (BOM EXEMPLO PARA ANÁLISE DO TCC. TAXA DE MANUTENIBILIDADE RAZOÁVEL, E TEM ALGUMAS OPORTUNIDADES DE MELHORAR)
-
-https://github.com/rodrigosabreu/Pioneira (PARECE UM BOM EXEMPLO, MAS NÃO SEI SE VAMOS CONSEGUIR USAR PORQUE USA UM SERVIÇO DO PROTHEUS)
-
-https://github.com/matheushps/ReservaFacil (PARECE UM BOM EXEMPLO)
-
-https://github.com/danimaribeiro/NFSe.Net (NÃO COMPILA, NÃO PARECE SE ENQUADRAR NO MODELO DE SOFTAWARE PARA PEQUENA EMPRESA)
-
-https://github.com/CristianoRC/SoftwareOrdemDeServico (PARECE UM BOM EXEMPLO)
-
-https://github.com/SavioMacedo/Projeto-Sistema-de-Consultas-OnDemand (NÃO PARECE SE ENQUADRAR NO MODELO DE SOFTAWARE PARA PEQUENA EMPRESA)
-
-https://github.com/kdjones/fuzzystring (NÃO PARECE SE ENQUADRAR NO MODELO DE SOFTAWARE PARA PEQUENA EMPRESA)
-
-https://github.com/renatosoares/agendawpf (SISTEMA OCO. SÓ TEM A ESTRUTURA)
-
-https://github.com/ranieresilva/controle-estoque (PARECE UM BOM EXEMPLO)
-
-https://github.com/lucasdearaujo/Correios.Net (NÃO PARECE SE ENQUADRAR NO MODELO DE SOFTAWARE PARA PEQUENA EMPRESA)
++ https://github.com/edivaniap/SGCM (NÃO COMPILA! O USUÁRIO PARECE TER EXCLUÍDO MANUALMENTE ALGUMAS TELAS DO SISTEMA)
++ https://github.com/rodrigosabreu/Pioneira (PARECE UM BOM EXEMPLO, MAS NÃO SEI SE VAMOS CONSEGUIR USAR PORQUE USA UM SERVIÇO DO PROTHEUS)
