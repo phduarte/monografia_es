@@ -12,4 +12,4 @@ Prof. Alan Oliveira
 
 # Palavras-chave
 
-Boas práticas, Code Metric, Métrica de Código, SOLID, DDD, KISS, Software Principles, MVC, MVVM, OOP, ERP, CRM, E-Commerce, 3 Camadas, 
+Boas práticas, Clean Code, Code Metric, Métrica de Código, SOLID, DDD, KISS, YAGNI, Primitive Obssession, Software Principles, MVC, MVVM, OOP, ERP, CRM, E-Commerce, 3 Camadas, 
