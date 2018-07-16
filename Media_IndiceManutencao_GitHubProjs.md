@@ -1,6 +1,6 @@
 | Projeto | Índice de Facilidade de Manutenção | Complexidade Ciclomática | Profundidade de Herança | Acoplamento de Classes | Linhas de Código|
 | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- |
-| [ReservaFacil](https://github.com/matheushps/ReservaFacil)*                      |90|-|-|-|1182|
+| [ReservaFacil](https://github.com/matheushps/ReservaFacil)* <ul><li>UI</li><li>ORM</li><li>BO</li><li>Domínio</li></ul>           |90<ul><li>85</li><li>92</li><li>92</li><li>93</li></ul>                                                                                  |-<ul><li>442</li><li>26</li><li>110</li><li>111</li></ul>                                                                                |-<ul><li>4</li><li>3</li><li>1</li><li>1</li></ul>                                                                                   |-<ul><li>228</li><li>24</li><li>21</li><li>7</li></ul>                                                                                  |1182<ul><li>904</li><li>28</li><li>139</li><li>111</li></ul>|
 | [pet_ecommerce_store](https://github.com/SarahSchoonmaker/pet_ecommerce_store)   |88|538|4|230|1026|
 | [sistema-comercio](https://github.com/felipeaugustox/sistema-comercio)*          |83|-|-|-|518|
 | [controle-estoque](https://github.com/ranieresilva/controle-estoque)             |77|880|4|192|1626|
