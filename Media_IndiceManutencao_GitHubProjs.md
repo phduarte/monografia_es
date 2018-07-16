@@ -1,8 +1,8 @@
-| Projeto | Índice de Facilidade de Manutenção | Complexidade Ciclomática | Profundidade de Herança | Acoplamento de Classes | Linhas de Código
+| Projeto | Índice de Facilidade de Manutenção | Complexidade Ciclomática | Profundidade de Herança | Acoplamento de Classes | Linhas de Código|
 | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- |
-| [sistema-comercio](https://github.com/felipeaugustox/sistema-comercio)        |||||
-| [ControleDeEstoque](https://github.com/jrrnet/ControleDeEstoque)               |||||
+| [ReservaFacil](https://github.com/matheushps/ReservaFacil)                      |90|-|-|-|1182|
+| [sistema-comercio](https://github.com/felipeaugustox/sistema-comercio)          |83|-|-|-|518|
+| [controle-estoque](https://github.com/ranieresilva/controle-estoque)            |77|880|4|192|1626|
+| [ControleDeEstoque](https://github.com/jrrnet/ControleDeEstoque)                |76|-|-|-|1097|
 | [Sistema-Condominio](https://github.com/gabrielfigueira/Sistema-Condominio)     |75|645|8|132|3854|
-| [ReservaFacil](https://github.com/matheushps/ReservaFacil)                |||||
-| [SoftwareOrdemDeServico](https://github.com/CristianoRC/SoftwareOrdemDeServico)     |||||
-| [controle-estoque](https://github.com/ranieresilva/controle-estoque)          |||||
+| [SoftwareOrdemDeServico](https://github.com/CristianoRC/SoftwareOrdemDeServico) |72|-|-|-|4233|
