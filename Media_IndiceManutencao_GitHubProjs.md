@@ -7,6 +7,5 @@
 | [ControleDeEstoque](https://github.com/jrrnet/ControleDeEstoque)*                |76|-|-|-|1097|
 | [Sistema-Condominio](https://github.com/gabrielfigueira/Sistema-Condominio)      |75|645|8|132|3854|
 | [SoftwareOrdemDeServico](https://github.com/CristianoRC/SoftwareOrdemDeServico)* |72|-|-|-|4233|
-| [hospital-crm](https://github.com/leartgjoni/c-sharp-hospital-crm)               |67|709|8|252|7401|
 
 ( * ) Estas soluções estão divididas em vários projetos, então o índice que coloquei é na verdade a média entre o índice de todos os Projetos que compõem a solução completa (não contando Projetos destinados a Teste).
