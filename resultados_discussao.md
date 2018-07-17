@@ -36,8 +36,6 @@ Apesar da melhoria de legibilidade no código atual, os padrões podem contribui
 
 Sim. Ao se ter um código bem aderente à boas práticas provavelmente também teremos um código mais íntegro. Isso porque um código que não viola os princípios SOLID por exemplo ou que aderente à convenções ao longo de sua arquitetura, também impede que futuramente um desenvolvedor menos atencioso/experiente possa vir a violá-los.
 
-*
-
 ---
 
 **Assunto**:
