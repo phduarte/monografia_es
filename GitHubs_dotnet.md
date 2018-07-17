@@ -8,6 +8,7 @@ Dentro do perfil, podem ser usados para avaliação:
 + https://github.com/matheushps/ReservaFacil
 + https://github.com/CristianoRC/SoftwareOrdemDeServico
 + https://github.com/ranieresilva/controle-estoque
++ https://github.com/pmk2429/SMSE_ERP
 
 Incompleto (Sistema oco):
 
