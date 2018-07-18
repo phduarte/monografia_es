@@ -114,3 +114,93 @@ Isso depende justamente dos objetivos de qualidade desejados para o projeto. Em 
 + Camada de Visualização: 70-75%
 
 Importante mencionar que sistemas Data Centric (popularmente chamados de CRUD) possuem nível de manutenibilidade muito superior na parte do software, visto que as regras de negócio estão armazenadas em store procedures no banco, onde realmente ocorrem manutenções com maior frequência. Esse tipo de sistema foi descartado do estudo devido a dificuldade de se mensurar a legibilidade, o nível de manutenibilidade ou o impacto das manutenções.
+
+---
+
+**Assunto**:
+
+Os nívels de manutenibilidade exibidos pelo Code Metrics são confiáveis?
+
+**Conclusão**:
+
+Para avaliação de um método apenas, sim. Quando é feito uma média entre mais de um método ocorre uma incongruência, devido o Code Metrics não considerar a quantidade de linhas (um fator fundamental) como um "peso" na hora de realizar a média entre os dois. Ou seja, se um método possui nível de 90% de manutenibilidade com 100 linhas e outro possui 70% com 10 linhas, a média simplesmente será 80%. O que não faz sentido visto que no final o método bem menor será bem mais rápido de ser analisado do que o maior (que já possui uma qualidade boa de código).
+
+Isso permite que o Nível de Manutenibilidade do Code Metrics seja burlado, beneficiando a inaderência do primeiro princípio do SOLID - Responsabilidade Única.
+
+Veja a explicação no exemplo abaixo:
+
+Se você possui um método sobrecarregado, com 100 linhas e com Nível de Manutenibilidade de pouco menos de 30%, e você refatora o método extraindo 1 linha para outro método, o projeto inteiro terá um aumento considerável no Nível de Manutenibilidade, segundo o Code Metrics.
+
+Veja os números que Code Metrics exibirá:
+
+<table>
+  <thead>
+      <tr>
+        <th>Método</th>
+        <th>% Manut.</th>
+        <th>-</th>
+        <th>Linhas</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>Método 1</td>
+        <td>30%</td>
+        <td>x</td>
+        <td>99</td>
+      </tr>
+    <tr>
+        <td>Método 2</td>
+        <td>90%</td>
+        <td>x</td>
+        <td>1</td>
+      </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+        <td>Total</td>
+        <td>60%</td>
+        <td>-</td>
+        <td>110</td>
+      </tr>
+  </tfoot>
+  </table>
+  
+Agora veja o cálculo correto para o exemplo acima:
+
+<table>
+  <thead>
+      <tr>
+        <th>Método</th>
+        <th>% Manut.</th>
+        <th>-</th>
+        <th>Linhas</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>Método 1</td>
+        <td>30%</td>
+        <td>x</td>
+        <td>99</td>
+      </tr>
+    <tr>
+        <td>Método 2</td>
+        <td>90%</td>
+        <td>x</td>
+        <td>1</td>
+      </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+        <td>Total</td>
+        <td>30,6% (*)</td>
+        <td>-</td>
+        <td>100</td>
+      </tr>
+  </tfoot>
+  </table>
+
+(*) Formula: ((30%*99)+(90%*1))/100 = 30,6%
+
+O segundo é bem mais coerente, pois, extrair apenas 1 linha do método melhorou a legibilidade do código, porém, isso contribuiu pouco para a legibilidade do projeto como todo, menos de 1% na realidade, enquanto o Code Metrics dirá 20%.
