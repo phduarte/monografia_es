@@ -108,7 +108,7 @@ Como saber se a qualidade do código já está boa?
 
 Isso depende justamente dos objetivos de qualidade desejados para o projeto. Em geral, nos softwares corporativos de pequeno porte que avaliamos neste estudo, as metas de Nível de Manutenibilidade são diferentes para cada camada do sistema, sendo que o estudo identificou nos sistemas de maiores legibilidade ou pós-refatoração, os seguintes índices médios aceitáveis:
 
-+ Camada de Acesso à Dados: 60-70%
++ Camada de Acesso à Dados: 60-80%
 + Camada de Domínio: 80-90%
 + Camada de Negócios: 75-85%
 + Camada de Visualização: 70-75%
