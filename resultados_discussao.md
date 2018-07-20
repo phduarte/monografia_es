@@ -119,7 +119,7 @@ Importante mencionar que sistemas Data Centric (popularmente chamados de CRUD) p
 
 **Assunto**:
 
-Os nívels de manutenibilidade exibidos pelo Code Metrics são confiáveis?
+Os niveis de manutenibilidade exibidos pelo Code Metrics são confiáveis?
 
 **Conclusão**:
 
