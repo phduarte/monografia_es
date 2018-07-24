@@ -94,7 +94,7 @@ Porquê a complexidade ciclomática influencia tanto na manutenibilidade do sist
 
 **Conclusão**:
 
-A complexidade ciclimática é a contagem de fluxos possíveis programados no código, ao mesmo tempo, esse número significa a quantidade mínima de testes necessários para cobrir 100% do sistema.
+A complexidade ciclomática é a contagem de fluxos possíveis programados no código, ao mesmo tempo, esse número significa a quantidade mínima de testes necessários para cobrir 100% do sistema.
 
 Quanto mais caminhos o código possuir, maior será o esforço para compreender e garantir o funcionamento correto.
 
@@ -113,7 +113,7 @@ Isso depende justamente dos objetivos de qualidade desejados para o projeto. Em 
 + Camada de Negócios: 75-85%
 + Camada de Visualização: 70-75%
 
-Importante mencionar que sistemas Data Centric (popularmente chamados de CRUD) possuem nível de manutenibilidade muito superior na parte do software, visto que as regras de negócio estão armazenadas em store procedures no banco, onde realmente ocorrem manutenções com maior frequência. Esse tipo de sistema foi descartado do estudo devido a dificuldade de se mensurar a legibilidade, o nível de manutenibilidade ou o impacto das manutenções.
+Importante mencionar que sistemas Data Centric (popularmente chamados de CRUD) possuem nível de manutenibilidade muito superior na parte do software, visto que as regras de negócio estão armazenadas em stored procedures no banco, onde realmente ocorrem manutenções com maior frequência. Esse tipo de sistema foi descartado do estudo devido a dificuldade de se mensurar a legibilidade, o nível de manutenibilidade ou o impacto das manutenções.
 
 ---
 
@@ -161,7 +161,7 @@ Veja os números que Code Metrics exibirá:
         <td>Total</td>
         <td>60%</td>
         <td>-</td>
-        <td>110</td>
+        <td>100</td>
       </tr>
   </tfoot>
   </table>
@@ -204,3 +204,22 @@ Agora veja o cálculo correto para o exemplo acima:
 (*) Formula: ((30%*99)+(90%*1))/100 = 30,6%
 
 O segundo é bem mais coerente, pois, extrair apenas 1 linha do método melhorou a legibilidade do código, porém, isso contribuiu pouco para a legibilidade do projeto como todo, menos de 1% na realidade, enquanto o Code Metrics dirá 20%.
+
+---
+
+**Assunto**:
+
+Uma demonstração de antes e depois de um sistema com melhoria do indice de manutenibilidade usando boas práticas:
+Análise do sistema de estoque [https://github.com/jrrnet/ControleDeEstoque]
+
+**Conclusão**:
+
+O indice de facilidade de manutenção inicial da versão original do software era 77%.
+
+Após realizar mudanças utilizando o conceito de responsabilidade única do SOLID onde uma classe deve realizar apenas uma tarefa,
+
+as classes de modelo deixaram de implementar consultas ao banco de dados, sendo esta tarefa transferida para ser responsabilidade de outras classes, o que
+
+consequentemente gerou aumento do indice de facilidade de manutenção para 80%.
+
+---

@@ -4,11 +4,14 @@ O impacto das boas práticas de software em projetos corporativos de pequeno e m
 
 # Autor
 
-Paulo Duarte
+Guilherme Antonio do Carmo
+Leonardo Gutierrez Sato
+Paulo Henrique Fernandes Duarte
+Robson Amaral Bacarin
 
 # Orientador
 
-Prof. Alan Oliveira
+Prof. Alan Alves Oliveira
 
 # Palavras-chave
 
