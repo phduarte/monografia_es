@@ -13,3 +13,7 @@
 3) Exemplos de bons sistemas, com alto índice de manutenibilidade.
 
 4) Uma demonstração de antes e depois de um sistema com baixo índice de manutenibilidade.
+
+---
+As considerações aqui apresentadas são baseadas nas melhores práticas de codificação de software no mercado e seus benefícios. 
+
