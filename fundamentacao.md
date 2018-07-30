@@ -12,6 +12,7 @@ As mudanças estratégicas de competitividade do mercado corporativo obrigam que
 
 Ao aplicar boas práticas em seu projeto, você está aderindo à soluções que já foram testadas para problemas conhecidos. Além de reduzir a probabilidade de defeito no código, isso também facilita a legibilidade e manutenção. Em alguns casos, também pode significar aumento de desempenho pelas melhores práticas de utilização de recursos, no entanto o objetivo principal é sobre a qualidade do software.
 Apesar da melhoria de legibilidade no código atual, os padrões podem contribuir para garantia da legibilidade a longo prazo. Ao se ter um código bem aderente à boas práticas provavelmente também teremos um código mais íntegro. Isso porque um código que não viola os princípios SOLID por exemplo ou que aderente à convenções ao longo de sua arquitetura, também impede que futuramente um desenvolvedor menos atencioso/experiente possa vir a violá-los.
+
 Para ter um software de boa qualidade, não é preciso garantir aderência de todas as boas práticas, é importante entender qual parte do projeto está mais frágil e concentrar maior atenção sobre ela. Normalmente em projetos bem estruturados, essas partes são facilmente identificadas através dos recursos do Code Metrics.
 
 **2.4 O que é Nível de Manutenibilidade?**
@@ -23,7 +24,8 @@ Para ter um software de boa qualidade, não é preciso garantir aderência de to
 É um sistema de avaliação de indicadores do software. No Visual Studio (IDE padrão para o C#) ele é uma extensão que permite mensurar a quantidade de linhas de código, a quantidade de acoplamento, a complexidade ciclomática e o nível de manutenibilidade.
 O Code Metrics ajuda a identificar classes e métodos que possuem um Nível de Manutenibilidade baixa. Este indicador ajuda a definir um ponto inicial para análise da qualidade do código.
 O que impacta diretamente nos Níveis de Manutenibilidade do Code Metrics no geral, é a complexidade ciclomática e o nível de acoplamento. Quando esses dois são tratados, normalmente acarretam uma redução de linhas de código, o que também influencia no Nível de Manutenibilidade.
-Os níveis de manutenibilidade exibidos pelo Code Metrics são confiáveis para avaliação de métodos isoladamente, mas quando é feito uma média entre mais de um método ocorre uma incongruência, devido o Code Metrics não considerar a quantidade de linhas (um fator fundamental) como um "peso" na hora de realizar a média entre os dois. Ou seja, se um método possui nível de 90% de manutenibilidade com 100 linhas e outro possui 70% com 10 linhas, a média simplesmente será 80%. O que não faz sentido visto que no final o método bem menor será bem mais rápido de ser analisado do que o maior (que já possui uma qualidade boa de código).
+
+Os níveis de manutenibilidade exibidos pelo Code Metrics são confiáveis para avaliação de um método isolado, mas quando é feito uma média entre mais de um método ocorre uma incongruência, devido o Code Metrics não considerar a quantidade de linhas (um fator fundamental) como um "peso" na hora de realizar a média entre os dois. Ou seja, se um método possui nível de 90% de manutenibilidade com 100 linhas e outro possui 70% com 10 linhas, a média simplesmente será 80%. O que não faz sentido visto que no final o método bem menor será bem mais rápido de ser analisado do que o maior (que já possui uma qualidade boa de código).
 
 Isso permite que o Nível de Manutenibilidade do Code Metrics seja burlado, beneficiando a inaderência do primeiro princípio do SOLID - Responsabilidade Única.
 
