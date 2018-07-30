@@ -110,7 +110,7 @@ Isso depende justamente dos objetivos de qualidade desejados para o projeto. Em 
 
 + Camada de Acesso à Dados: 60-80%
 + Camada de Domínio: 80-90%
-+ Camada de Negócios: 75-85%
++ Camada de Negócios: 70-85%
 + Camada de Visualização: 70-75%
 
 Importante mencionar que sistemas Data Centric (popularmente chamados de CRUD) possuem nível de manutenibilidade muito superior na parte do software, visto que as regras de negócio estão armazenadas em stored procedures no banco, onde realmente ocorrem manutenções com maior frequência. Esse tipo de sistema foi descartado do estudo devido a dificuldade de se mensurar a legibilidade, o nível de manutenibilidade ou o impacto das manutenções.
@@ -221,5 +221,200 @@ Após realizar mudanças utilizando o conceito de responsabilidade única do SOL
 as classes de modelo deixaram de implementar consultas ao banco de dados, sendo esta tarefa transferida para ser responsabilidade de outras classes, o que
 
 consequentemente gerou aumento do indice de facilidade de manutenção para 80%.
+
+---
+
+**Assunto**:
+
+Demonstração do efeito da refatoração do código no índice de manutenibilidade. (Resultados do Code Metrics do Visual Studio)
+
+**Conclusão**:
+
+*(Projeto Original)* O método **Carregar** chamado na camada de Apresentação, passa como argumento o texto de um componente da tela (Windows Forms) que é inserido diretamente no texto da Consulta que será executada para acessar os dados da base. 
+
+A rotina que faz a conversão dos valores dentro do DataTable para as propriedades dentro do objeto da classe Tecnico também está implementada dentro do método.
+
+*(Trecho de código igual para ambos projetos)* Chamada do método **Carregar** na camada de Apresentação
+
+```c#
+private void Btm_Pesquisar_Click(object sender, EventArgs e)
+{
+    tecnico UsuarioBase = new tecnico();
+    UsuarioBase = ControllerUsuario.Carregar(Txt_Tecnicos.Text);
+
+    IDtec = UsuarioBase.Id;
+    Txt_Login.Text = UsuarioBase.Nome;
+    Txt_Senha.Text = UsuarioBase.Senha;
+    Txt_Tipo.Text = RetornarTipo(UsuarioBase);
+}
+```
+
+**Projeto Original:** (https://github.com/CristianoRC/SoftwareOrdemDeServico)
+<table>
+  <thead>
+      <tr>
+        <th>Método</th>
+        <th>% Manut.</th>
+        <th>Comp. Ciclomática</th>
+        <th>Acop. de Classes</th>
+        <th>Linhas</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>Carregar</td>
+        <td>51%</td>
+        <td>10</td>
+        <td>13</td>
+        <td>20</td>
+      </tr>   
+  </tbody>
+  </table>
+
+```c#
+public static tecnico Carregar(string Login)
+{
+    tecnico UsuarioBase = new tecnico();
+
+    Spartacus.Database.Generic dataBase;
+    System.Data.DataTable Tabela;
+
+    try
+    {
+       dataBase = new Spartacus.Database.Sqlite(DB.GetStrConection());
+
+       Tabela = dataBase.Query(String.Format("Select * from tecnicos WHERE Login = '{0}'", Login.ToLower()), "Tecnicos");
+       [...]
+    }
+    catch (Exception exc)
+    {
+       ControllerArquivoLog.GeraraLog(exc);
+    }
+
+    return UsuarioBase;
+}
+```
+
+*(Projeto Refatorado)* Separando a criação do texto da Consulta e componentes de Acesso a Dados do método original, além de outras mudanças como a criação de um método para conversão do resultado da consulta para as propriedades dentro do objeto da classe Tecnico, foi possível aumentar o índice de Facilidade de Manutenção em geral dos métodos com a mesma responsabilidade do método no *Projeto Original*.
+
+**Projeto Refatorado:** (https://github.com/satoLG/refactor_SoftwareOrdemDeServico)
+<table>
+  <thead>
+      <tr>
+        <th>Método</th>
+        <th>% Manut.</th>
+        <th>Comp. Ciclomática</th>
+        <th>Acop. de Classes</th>
+        <th>Linhas</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>CarregarPorLogin</td>
+        <td>73%</td>
+        <td>1</td>
+        <td>2</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Carregar</td>
+        <td>70%</td>
+        <td>2</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>    
+  </tbody>
+  </table>
+
+```c#
+public static DataTable CarregarPorLogin(String Login)
+{
+    ComandoDB Comando = new ComandoDB("Select * from tecnicos WHERE Login = #login#");
+
+    Comando.AdicionarParametro("login", Login.ToLower(), Spartacus.Database.Type.STRING);
+
+    return Comando.ListarTabela("Tecnicos");
+}
+```
+
+```c#
+public static Tecnico Carregar(string Login)
+{
+    DataTable tabela = new DataTable("Tecnico");
+
+    try
+    {
+        tabela = AcessoUsuario.CarregarPorLogin(Login);
+    }
+    catch (Exception ex)
+    {
+        ArquivoLog.Gerar(ex);
+    }
+
+    return PreencheTecnico(tabela);
+}
+```
+Refatorando o código da mesma forma em todos os métodos de todas as classes que controlam o acesso aos Dados no *Projeto Original* houve um aumento considerável do índice de Facilidade de Manutenção desta camada.
+
+**Projeto Original:**
+<table>
+  <thead>
+      <tr>
+        <th>Camada</th>
+        <th>% Manut.</th>
+        <th>Comp. Ciclomática</th>
+        <th>Acop. de Classes</th>
+        <th>Linhas</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>Controller</td>
+        <td>63%</td>
+        <td>170</td>
+        <td>46</td>
+        <td>909</td>
+      </tr>
+  </tbody>
+  </table>
+  
+
+**Projeto Refatorado:**
+<table>
+  <thead>
+      <tr>
+        <th>Camada</th>
+        <th>% Manut.</th>
+        <th>Comp. Ciclomática</th>
+        <th>Acop. de Classes</th>
+        <th>Linhas</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>Acesso a Dados</td>
+        <td>72%</td>
+        <td>49</td>
+        <td>12</td>
+        <td>217</td>
+      </tr>
+          <tr>
+        <td>Regras de Negócio</td>
+        <td>70%</td>
+        <td>120</td>
+        <td>37</td>
+        <td>358</td>
+      </tr>
+          <tr>
+        <td>Utilitários (Cross-Cutting)</td>
+        <td>77%</td>
+        <td>28</td>
+        <td>11</td>
+        <td>51</td>
+      </tr>
+  </tbody>
+  </table>
+  
+  As 3 camadas do *Projeto Refatorado* são resultado da refatoração da camada Controller do *Projeto Original*, observando as funcionalidades e responsabilidades que estavam concentradas na mesma.
 
 ---
