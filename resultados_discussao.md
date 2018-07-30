@@ -20,6 +20,32 @@ As mudanças estratégicas de competitividade do mercado corporativo obrigam que
 
 **Assunto**:
 
+Do que se trata o processo de manutenção do software ?
+
+**Conclusão**:
+
+Em geral, qualquer alteração feita no software após sua implantação faz parte da etapa de Manutenção. Seja essa alteração corretiva (tratamento de comportamentos não esperados), adaptativa (adaptação a novos requisitos) ou evolutiva (adição de novas funcionalidades ou otimização). 
+
+(**Baseado no Capitulo 9 do livro:** Engenharia de Software, 9ª Edição, Ian Sommerville. Pearson Education, 2011.)
+
+---
+
+**Assunto**:
+
+Qual a importância de facilitar a manutenção do software ?
+
+**Conclusão**:
+
+No ciclo de vida de um software, a etapa de manutenção é a mais duradoura e normalmente é mais custosa do que a etapa de desenvolvimento. Um dos principais fatores que aumentam o custo da manutenção é o esforço requerido para o entendimento e análise do software, já que em grande parte das empresas, a manutenção é considerada uma tarefa secundária e passada para outras equipes ou até outras empresas que nunca tiveram contato com o software.
+
+Por esse motivo, investir na etapa de desenvolvimento do software, para que seja planejado e implementado com as mudanças futuras em mente. 
+
+(**Baseado no Capitulo 9 do livro:** Engenharia de Software, 9ª Edição, Ian Sommerville. Pearson Education, 2011.)
+
+---
+
+**Assunto**:
+
 Como um projeto pode ficar melhor à partir da aplicação de boas práticas?
 
 **Conclusão**:
