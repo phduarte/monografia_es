@@ -4,10 +4,10 @@ O impacto das boas práticas de software em projetos corporativos de pequeno e m
 
 # Autores
 
-Guilherme Antonio do Carmo,
-Leonardo Gutierrez Sato,
-Paulo Henrique Fernandes Duarte,
-Robson Amaral Bacarin
++ Guilherme Antonio do Carmo
++ Leonardo Gutierrez Sato
++ Paulo Henrique Fernandes Duarte
++ Robson Amaral Bacarin
 
 # Orientador
 
