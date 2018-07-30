@@ -10,11 +10,11 @@ As boas práticas são um conjunto de padrões, princípios e convenções que t
 
 **Assunto**:
 
-Qual utilidade das boas práticas para um projeto de pequeno porte?
+Qual a utilidade das boas práticas para um projeto de pequeno porte?
 
 **Conclusão**:
 
-As mudanças estratégicas de competitividade do mercado corporativo obrigam que o software evolua na mesma velocidade. Isso torna a manutenibilidade um indicador fundamental para ter um software adaptativo e evolutivo, que dure o maior tempo possível ao menor custo de manutenção. Esses objetivos quando atendidos, elevam à confiança dos clientes/usuários e garante ao software um título de qualidade.
+As mudanças estratégicas de competitividade do mercado corporativo obrigam que o software evolua na mesma velocidade. Isso torna a manutenibilidade um indicador fundamental para ter um software adaptativo e evolutivo, que dure o maior tempo possível ao menor custo de manutenção. Esses objetivos quando atendidos, elevam à confiança dos clientes/usuários e garantem ao software um título de qualidade.
 
 ---
 
@@ -44,7 +44,7 @@ Para ter um software de boa qualidade, preciso garantir aderência de todas as b
 
 **Conclusão**:
 
-Não. É importante entender qual parte do projeto está mais frágil e concentrar maior atenção sobre ela. Normalmente em projetos bem estruturados, essas partes são fácilmente identificadas através dos recurso do Code Metrics.
+Não. É importante entender qual parte do projeto está mais frágil e concentrar maior atenção sobre ela. Normalmente em projetos bem estruturados, essas partes são fácilmente identificadas através dos recursos do Code Metrics.
 
 ---
 
@@ -214,13 +214,10 @@ Análise do sistema de estoque [https://github.com/jrrnet/ControleDeEstoque]
 
 **Conclusão**:
 
-O indice de facilidade de manutenção inicial da versão original do software era 77%.
+O índice de facilidade de manutenção da versão original do software era *77%*.
 
-Após realizar mudanças utilizando o conceito de responsabilidade única do SOLID onde uma classe deve realizar apenas uma tarefa,
-
-as classes de modelo deixaram de implementar consultas ao banco de dados, sendo esta tarefa transferida para ser responsabilidade de outras classes, o que
-
-consequentemente gerou aumento do indice de facilidade de manutenção para 80%.
+Após realizar mudanças utilizando o conceito de responsabilidade única do SOLID, no qual uma classe deve realizar apenas uma tarefa,
+as classes de modelo deixaram de implementar consultas ao banco de dados, sendo esta tarefa transferida para ser responsabilidade de outras classes, o que consequentemente gerou aumento do indice de facilidade de manutenção para *80%*.
 
 ---
 
