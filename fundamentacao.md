@@ -118,9 +118,9 @@ Quanto mais caminhos o código possuir, maior será o esforço para compreender 
 
 Isso depende justamente dos objetivos de qualidade desejados para o projeto. Em geral, nos softwares corporativos de pequeno porte que avaliamos neste estudo, as metas de Nível de Manutenibilidade são diferentes para cada camada do sistema, sendo que o estudo identificou nos sistemas de maiores legibilidade ou pós-refatoração, os seguintes índices médios aceitáveis:
 
- Camada de Acesso à Dados: 60-80%
- Camada de Domínio: 80-90%
- Camada de Negócios: 70-85%
- Camada de Visualização: 70-75%
++ Camada de Acesso à Dados: 60-80%
++ Camada de Domínio: 80-90%
++ Camada de Negócios: 70-85%
++ Camada de Visualização: 70-75%
 
 Importante mencionar que sistemas Data Centric (popularmente chamados de CRUD) possuem nível de manutenibilidade muito superior na parte do software, visto que as regras de negócio estão armazenadas em stored procedures no banco, onde realmente ocorrem manutenções com maior frequência. Esse tipo de sistema foi descartado do estudo devido a dificuldade de se mensurar a legibilidade, o nível de manutenibilidade ou o impacto das manutenções.
