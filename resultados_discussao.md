@@ -110,7 +110,7 @@ Isso depende justamente dos objetivos de qualidade desejados para o projeto. Em 
 
 + Camada de Acesso à Dados: 60-80%
 + Camada de Domínio: 80-90%
-+ Camada de Negócios: 75-85%
++ Camada de Negócios: 70-85%
 + Camada de Visualização: 70-75%
 
 Importante mencionar que sistemas Data Centric (popularmente chamados de CRUD) possuem nível de manutenibilidade muito superior na parte do software, visto que as regras de negócio estão armazenadas em stored procedures no banco, onde realmente ocorrem manutenções com maior frequência. Esse tipo de sistema foi descartado do estudo devido a dificuldade de se mensurar a legibilidade, o nível de manutenibilidade ou o impacto das manutenções.
