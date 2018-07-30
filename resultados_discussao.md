@@ -10,11 +10,37 @@ As boas práticas são um conjunto de padrões, princípios e convenções que t
 
 **Assunto**:
 
-Qual utilidade das boas práticas para um projeto de pequeno porte?
+Qual a utilidade das boas práticas para um projeto de pequeno porte?
 
 **Conclusão**:
 
-As mudanças estratégicas de competitividade do mercado corporativo obrigam que o software evolua na mesma velocidade. Isso torna a manutenibilidade um indicador fundamental para ter um software adaptativo e evolutivo, que dure o maior tempo possível ao menor custo de manutenção. Esses objetivos quando atendidos, elevam à confiança dos clientes/usuários e garante ao software um título de qualidade.
+As mudanças estratégicas de competitividade do mercado corporativo obrigam que o software evolua na mesma velocidade. Isso torna a manutenibilidade um indicador fundamental para ter um software adaptativo e evolutivo, que dure o maior tempo possível ao menor custo de manutenção. Esses objetivos quando atendidos, elevam à confiança dos clientes/usuários e garantem ao software um título de qualidade.
+
+---
+
+**Assunto**:
+
+Do que se trata o processo de manutenção do software ?
+
+**Conclusão**:
+
+Em geral, qualquer alteração feita no software após sua implantação faz parte da etapa de Manutenção. Seja essa alteração corretiva (tratamento de comportamentos não esperados), adaptativa (adaptação a novos requisitos) ou evolutiva (adição de novas funcionalidades ou otimização). 
+
+(**Baseado no Capitulo 9 do livro:** Engenharia de Software, 9ª Edição, Ian Sommerville. Pearson Education, 2011.)
+
+---
+
+**Assunto**:
+
+Qual a importância de facilitar a manutenção do software ?
+
+**Conclusão**:
+
+No ciclo de vida de um software, a etapa de manutenção é a mais duradoura e normalmente é mais custosa do que a etapa de desenvolvimento. Um dos principais fatores que aumentam o custo da manutenção é o esforço requerido para o entendimento e análise do software, já que em grande parte das empresas, a manutenção é considerada uma tarefa secundária e passada para outras equipes ou até outras empresas que nunca tiveram contato com o software.
+
+Por esse motivo, investir na etapa de desenvolvimento do software, para que seja planejado e implementado com as mudanças futuras em mente. 
+
+(**Baseado no Capitulo 9 do livro:** Engenharia de Software, 9ª Edição, Ian Sommerville. Pearson Education, 2011.)
 
 ---
 
@@ -44,7 +70,7 @@ Para ter um software de boa qualidade, preciso garantir aderência de todas as b
 
 **Conclusão**:
 
-Não. É importante entender qual parte do projeto está mais frágil e concentrar maior atenção sobre ela. Normalmente em projetos bem estruturados, essas partes são fácilmente identificadas através dos recurso do Code Metrics.
+Não. É importante entender qual parte do projeto está mais frágil e concentrar maior atenção sobre ela. Normalmente em projetos bem estruturados, essas partes são fácilmente identificadas através dos recursos do Code Metrics.
 
 ---
 
@@ -74,7 +100,7 @@ O que é Nível de Manutenibilidade?
 
 **Conclusão**:
 
-É uma cálculo baseado na complexidade ciclomática do sistema, o acoplamento e a quantidade de linhas de código. Um membro com baixo nível de manutenibilidade provavelmente possui uma lógica confusa, grande dependência externa, muitas linhas de código ou complexidade ciclomática alta.
+É um cálculo baseado na complexidade ciclomática do sistema, o acoplamento e a quantidade de linhas de código. Um membro com baixo nível de manutenibilidade provavelmente possui uma lógica confusa, grande dependência externa, muitas linhas de código ou complexidade ciclomática alta.
 
 ---
 
@@ -214,13 +240,10 @@ Análise do sistema de estoque [https://github.com/jrrnet/ControleDeEstoque]
 
 **Conclusão**:
 
-O indice de facilidade de manutenção inicial da versão original do software era 77%.
+O índice de facilidade de manutenção da versão original do software era *77%*.
 
-Após realizar mudanças utilizando o conceito de responsabilidade única do SOLID onde uma classe deve realizar apenas uma tarefa,
-
-as classes de modelo deixaram de implementar consultas ao banco de dados, sendo esta tarefa transferida para ser responsabilidade de outras classes, o que
-
-consequentemente gerou aumento do indice de facilidade de manutenção para 80%.
+Após realizar mudanças utilizando o conceito de responsabilidade única do SOLID, no qual uma classe deve realizar apenas uma tarefa,
+as classes de modelo deixaram de implementar consultas ao banco de dados, sendo esta tarefa transferida para ser responsabilidade de outras classes, o que consequentemente gerou aumento do indice de facilidade de manutenção para *80%*.
 
 ---
 
