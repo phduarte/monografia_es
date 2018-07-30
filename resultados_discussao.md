@@ -54,7 +54,7 @@ O que é Code Metrics?
 
 **Conclusão**:
 
-É um sistema de avaliação de indicadores do software. No Visual Studio (IDE padrão para o C#) ele é uma extensão que permite mensurar a quantidade de linhas de código, a quantidade de acoplamento, a complexidade ciclomática e o nível de manutenibilidade.
+É um sistema de avaliação de indicadores do software. No Visual Studio (IDE padrão para o C#) ele é uma extensão que permite mensurar a quantidade de linhas de código, a quantidade de acoplamento, a complexidade ciclomática e o nível de manutenibilidade. No momento a extensão só calcula métricas para projetos em C#, Visual Basic e C++/CLI que não são projetos de Site.
 
 ---
 
