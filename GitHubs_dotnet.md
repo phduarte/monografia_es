@@ -1,7 +1,7 @@
 Alguns sistemas em .NET que talvez podemos usar para comparação
 
 Dentro do perfil, podem ser usados para avaliação:
-
++ https://github.com/smartstoreag/SmartStoreNET (Referência de bom projeto, apesar do tamanho da aplicação)
 + https://github.com/felipeaugustox/sistema-comercio
 + https://github.com/jrrnet/ControleDeEstoque
 + https://github.com/gabrielfigueira/Sistema-Condominio
