@@ -4,7 +4,7 @@
 
 As boas práticas são um conjunto de padrões, princípios e convenções que tem como objetivo estabelecer expressividade e legibilidade aos sistemas, isso permite que qualquer desenvolvedor com conhecimento dessas boas práticas, possa compreender de forma mais rápida detalhes essenciais sobre o propósito e funcionamento do software.
 
-**2.2 Qual utilidade das boas práticas para um projeto de pequeno porte?**
+**2.2 Qual a utilidade das boas práticas para um projeto de pequeno porte?**
 
 As mudanças estratégicas de competitividade do mercado corporativo obrigam que o software evolua na mesma velocidade. Isso torna a manutenibilidade um indicador fundamental para ter um software adaptativo e evolutivo, que dure o maior tempo possível ao menor custo de manutenção. Esses objetivos quando atendidos, elevam à confiança dos clientes/usuários e garante ao software um título de qualidade.
 
