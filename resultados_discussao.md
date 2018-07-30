@@ -74,7 +74,7 @@ O que é Nível de Manutenibilidade?
 
 **Conclusão**:
 
-É uma cálculo baseado na complexidade ciclomática do sistema, o acoplamento e a quantidade de linhas de código. Um membro com baixo nível de manutenibilidade provavelmente possui uma lógica confusa, grande dependência externa, muitas linhas de código ou complexidade ciclomática alta.
+É um cálculo baseado na complexidade ciclomática do sistema, o acoplamento e a quantidade de linhas de código. Um membro com baixo nível de manutenibilidade provavelmente possui uma lógica confusa, grande dependência externa, muitas linhas de código ou complexidade ciclomática alta.
 
 ---
 
