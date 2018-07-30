@@ -10,7 +10,7 @@ Etapas de desenvolvimento (“como fazer”)
 2) Excluir objetos vazios ou não usados no projeto para evitar que influenciem na medição.
 3) Aferir cada software através de indicadores de Linhas de Código, Complexidade ciclomática, Acoplamento, Quantidade de indireções, Quantidade de números mágicos, Comentários.
 4) Registrar seus dados em planilha.
-5) Estabelecer uma média para cada propósito (CRM, ERP, E-Commerce).
+5) Estabelecer uma média para cada camada (Modelo, Acesso à Dados, Negócios e Apresentação).
 6) Para softwares muito acima da média, revisar utilizando boas práticas a fim de identificar se houve perda de índice de manutenibilidade.
 7) Registrar as evidências como estudo de caso de perda de qualidade.
 8) Para softwares muito abaixo da média, avaliar utilizando boas práticas a fim de identificar se houve aumento de índice de manutenibilidade.
