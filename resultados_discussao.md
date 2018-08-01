@@ -363,18 +363,7 @@ public static DataTable CarregarPorLogin(String Login)
 ```c#
 public static Tecnico Carregar(string Login)
 {
-    DataTable tabela = new DataTable("Tecnico");
-
-    try
-    {
-        tabela = AcessoUsuario.CarregarPorLogin(Login);
-    }
-    catch (Exception ex)
-    {
-        ArquivoLog.Gerar(ex);
-    }
-
-    return PreencheTecnico(tabela);
+    return PreencheTecnico(AcessoUsuario.CarregarPorLogin(Login).Rows[0]);
 }
 ```
 Refatorando o código da mesma forma em todos os métodos de todas as classes que controlam o acesso aos Dados no *Projeto Original* houve um aumento considerável do índice de Facilidade de Manutenção desta camada.
@@ -416,24 +405,24 @@ Refatorando o código da mesma forma em todos os métodos de todas as classes qu
   <tbody>
       <tr>
         <td>Acesso a Dados</td>
-        <td>72%</td>
+        <td>71%</td>
         <td>49</td>
-        <td>12</td>
-        <td>217</td>
+        <td>14</td>
+        <td>219</td>
       </tr>
-          <tr>
+      <tr>
         <td>Regras de Negócio</td>
-        <td>70%</td>
-        <td>120</td>
+        <td>75%</td>
+        <td>92</td>
         <td>37</td>
-        <td>358</td>
+        <td>215</td>
       </tr>
           <tr>
         <td>Utilitários (Cross-Cutting)</td>
-        <td>77%</td>
-        <td>28</td>
-        <td>11</td>
-        <td>51</td>
+        <td>78%</td>
+        <td>25</td>
+        <td>10</td>
+        <td>43</td>
       </tr>
   </tbody>
   </table>
